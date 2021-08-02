@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>my coins</title>
+    <title>my coins.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -12,9 +12,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-
-
     <style>
         body,
         h1,
@@ -45,7 +42,7 @@
     <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
             <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-            <div class="w3-center w3-padding-16">my coins</div>
+            <div class="w3-center w3-padding-16">my coins.</div>
         </div>
     </div>
 
@@ -142,8 +139,8 @@
             $.each(json, function(i) {
                 //(i % 4 == 0) && (str += `<div class="w3-row-padding w3-padding-16 w3-center" >`)
                 str += `<div class="w3-quarter">
-                    <img src="coins/coin.jpg" alt="" style="width:100%">
-                    <h3>` + this.title + ' ' + (i + 1) + `</h3>
+                    <img src="` + this.img + `" alt="" style="width:100%">
+                    <h3>` + this.title + `</h3>
                     <p></p>
                 </div>`;
                 //(i == l - 1) && (str += `</div>`)
