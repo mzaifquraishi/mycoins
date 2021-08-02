@@ -26,6 +26,11 @@
         .w3-bar-block .w3-bar-item {
             padding: 20px
         }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            color: #000000 !important;
+        }
     </style>
 </head>
 
@@ -165,13 +170,15 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        dots: true
                     }
                 }, {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: true
                     }
                 }]
             });
